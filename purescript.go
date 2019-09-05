@@ -4,7 +4,7 @@ package purescript
 
 import "sync"
 
-type Any interface{}
+type Any = interface{}
 
 type Fn = func(Any) Any
 type EffFn = func() Any
