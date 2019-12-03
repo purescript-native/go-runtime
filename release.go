@@ -26,3 +26,9 @@ func Length(arr Any) Any {
 	a, _ := arr.([]Any)
 	return len(a)
 }
+
+func Index(arr Any, idx Any) Any {
+	a, _ := arr.([]Any)
+	i, _ := idx.(int)
+	return a[i]
+}
