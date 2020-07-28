@@ -32,3 +32,12 @@ func Index(arr Any, idx Any) Any {
 	i := idx.(int)
 	return a[i]
 }
+
+func CopyDict(dict Any) Any {
+	d := dict.(Dict)
+	cpy := make(Dict)
+	for k, v := range d {
+		cpy[k] = v
+	}
+	return cpy
+}
