@@ -22,6 +22,12 @@ func Contains(dict Any, key string) bool {
 	return found
 }
 
+func Is(dict Any, key string) bool {
+	d := dict.(Dict)
+	_, found := d[key]
+	return found
+}
+
 func Length(arr Any) Any {
 	a := arr.([]Any)
 	return len(a)
