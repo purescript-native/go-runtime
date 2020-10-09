@@ -21,7 +21,8 @@ type Fn8 = func(Any, Any, Any, Any, Any, Any, Any, Any) Any
 type Fn9 = func(Any, Any, Any, Any, Any, Any, Any, Any, Any) Any
 type Fn10 = func(Any, Any, Any, Any, Any, Any, Any, Any, Any, Any) Any
 
-const Undefined = "\x00<undefined>\x00"
+var undefined = "<undefined>"
+var Undefined Any = &undefined
 
 var foreign = make(map[string]Dict)
 
